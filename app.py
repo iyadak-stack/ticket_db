@@ -55,7 +55,7 @@ def book_safe(concert_id):
         concert = cursor.fetchone()
         available = concert["available_seats"]
 
-        time.sleep(50)
+        time.sleep(100)
 
         if available > 0:
             cursor.execute(
